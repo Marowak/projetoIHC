@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".CategoriaListActivity"
-    tools:showIn="@layout/activity_categoria_list">
+    tools:context=".ReceitaListActivity"
+    tools:showIn="@layout/activity_receita_list">
 
     <EditText
         android:id="@+id/search"
@@ -21,7 +21,6 @@
         android:hint="Search" />
 
     <LinearLayout
-        android:id="@+id/mexicana"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
@@ -31,7 +30,7 @@
             android:layout_width="100dp"
             android:layout_height="70dp"
             android:scaleType="fitXY"
-            android:src="@drawable/mexicanajpg" />
+            android:src="@drawable/pave" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -42,7 +41,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textAlignment="center"
-                android:text="Mexicana"
+                android:text="Pavê"
                 android:textSize="20dp"
                 android:textStyle="bold"
                 android:layout_weight="2"/>
@@ -51,7 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="10dp"
-                android:text="Culinária picante baseada em prato típicos do México"
+                android:text="Pavê com chocolate e coberto de moranos"
                 android:layout_weight="1"/>
 
         </LinearLayout>
@@ -66,7 +65,6 @@
         android:background="@android:color/darker_gray"/>
 
     <LinearLayout
-        android:id="@+id/sobremesa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
@@ -77,7 +75,7 @@
             android:layout_width="100dp"
             android:layout_height="70dp"
             android:scaleType="fitXY"
-            android:src="@drawable/sobremesa" />
+            android:src="@drawable/pudimchocolate" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -88,7 +86,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textAlignment="center"
-                android:text="Sobremesa"
+                android:text="Pudim de Chocolate"
                 android:textSize="20dp"
                 android:textStyle="bold"
                 android:layout_weight="2"/>
@@ -97,12 +95,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="10dp"
-                android:text="Os doces mais gostosos e suculentos para sobremesa"
+                android:text="Pudim de chocolate com granulado"
                 android:layout_weight="1"/>
 
         </LinearLayout>
 
     </LinearLayout>
-
 
 </LinearLayout>

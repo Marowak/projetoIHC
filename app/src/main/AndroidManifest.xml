@@ -24,20 +24,23 @@
             </intent-filter>
         </activity>
         <activity android:name=".ConfiguracoesActivity" />
-        <activity android:name=".NovaCategoriaActivity"></activity>
+        <activity android:name=".NovaCategoriaActivity" />
         <activity android:name=".CadastroActivity" />
         <activity
             android:name=".CategoriaListActivity"
             android:label="@string/title_activity_categoria_list"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ReceitaListActivity"
             android:label="Sobremesas"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ReceitaVaziaActivity"
             android:label="Mexicana"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NovaReceitaActivity"
+            android:label="Nova Receita"></activity>
     </application>
 
 </manifest>

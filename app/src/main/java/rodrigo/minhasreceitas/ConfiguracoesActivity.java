@@ -42,6 +42,10 @@ public class ConfiguracoesActivity extends AppCompatActivity {
                 final EditText newPass = new EditText(ctx);
                 final EditText confirmPass = new EditText(ctx);
 
+                oldPass.setHint("Old Password");
+                newPass.setHint("New Password");
+                confirmPass.setHint("Confirm New Password");
+
                 oldPass.setTransformationMethod(PasswordTransformationMethod.getInstance());
                 newPass.setTransformationMethod(PasswordTransformationMethod.getInstance());
                 confirmPass.setTransformationMethod(PasswordTransformationMethod.getInstance());

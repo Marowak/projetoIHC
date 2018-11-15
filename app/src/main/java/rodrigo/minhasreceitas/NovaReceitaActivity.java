@@ -11,20 +11,20 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-public class NovaCategoriaActivity extends AppCompatActivity {
+public class NovaReceitaActivity extends AppCompatActivity {
 
     private static int RESULT_LOAD_IMAGE = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_nova_categoria);
+        setContentView(R.layout.activity_nova_receita);
 
         Button buttonLogout = (Button) findViewById(R.id.btnSalvar);
         buttonLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getBaseContext(), CategoriaListActivity.class);
+                Intent intent = new Intent(getBaseContext(), ReceitaVaziaActivity.class);
                 startActivity(intent);
             }
         });
@@ -42,8 +42,8 @@ public class NovaCategoriaActivity extends AppCompatActivity {
                 startActivityForResult(i, RESULT_LOAD_IMAGE);
             }
         });
-    }
 
+    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -65,5 +65,8 @@ public class NovaCategoriaActivity extends AppCompatActivity {
             imageView.setImageBitmap(BitmapFactory.decodeFile(picturePath));
 
         }
+
+
     }
+
 }

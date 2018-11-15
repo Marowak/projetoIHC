@@ -23,7 +23,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ConfiguracoesActivity"></activity>
+        <activity android:name=".ConfiguracoesActivity" />
+        <activity android:name=".NovaCategoriaActivity"></activity>
     </application>
 
 </manifest>

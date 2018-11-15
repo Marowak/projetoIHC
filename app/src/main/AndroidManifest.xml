@@ -30,6 +30,14 @@
             android:name=".CategoriaListActivity"
             android:label="@string/title_activity_categoria_list"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".ReceitaListActivity"
+            android:label="Sobremesas"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".ReceitaVaziaActivity"
+            android:label="Mexicana"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

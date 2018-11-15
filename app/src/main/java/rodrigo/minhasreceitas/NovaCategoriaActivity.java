@@ -15,13 +15,16 @@ public class NovaCategoriaActivity extends AppCompatActivity {
 
     private static int RESULT_LOAD_IMAGE = 1;
 
+    private Button mBtnSalvar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nova_categoria);
 
-        Button buttonLogout = (Button) findViewById(R.id.btnSalvar);
-        buttonLogout.setOnClickListener(new View.OnClickListener() {
+        mBtnSalvar = (Button) findViewById(R.id.btnSalvar);
+
+        mBtnSalvar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getBaseContext(), CategoriaListActivity.class);

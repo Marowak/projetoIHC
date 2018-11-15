@@ -28,53 +28,5 @@ public class ConfiguracoesActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
-        Button buttonChangePass = (Button) findViewById(R.id.btnTrocarSenha);
-        buttonChangePass.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Context ctx = getBaseContext();
-                AlertDialog.Builder builder = new AlertDialog.Builder(ctx);
-                builder.setCancelable(true);
-                builder.setTitle("Change Password");
-                final EditText oldPass = new EditText(ctx);
-                final EditText newPass = new EditText(ctx);
-                final EditText confirmPass = new EditText(ctx);
-
-                oldPass.setHint("Old Password");
-                newPass.setHint("New Password");
-                confirmPass.setHint("Confirm New Password");
-
-                oldPass.setTransformationMethod(PasswordTransformationMethod.getInstance());
-                newPass.setTransformationMethod(PasswordTransformationMethod.getInstance());
-                confirmPass.setTransformationMethod(PasswordTransformationMethod.getInstance());
-
-                LinearLayout ll = new LinearLayout(ctx);
-                ll.setOrientation(LinearLayout.VERTICAL);
-
-                ll.addView(oldPass);
-
-                ll.addView(newPass);
-                ll.addView(confirmPass);
-                builder.setView(ll);
-                builder.setPositiveButton("Confirm",
-                        new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.cancel();
-                            }
-                        });
-                builder.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.cancel();
-                    }
-                });
-
-                AlertDialog dialog = builder.create();
-                dialog.show();
-            }
-        });
     }
 }
